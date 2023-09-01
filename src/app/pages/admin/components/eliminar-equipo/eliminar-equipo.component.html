@@ -1,0 +1,9 @@
+<h1 style="margin: 2%;">Eliminar Equipo</h1>
+
+
+<div style="margin: 5%;">
+        <h2>Esta seguro que desea eliminar los datos de: {{dataEquipo.nombre}} </h2>
+        <button  type="reset"  mat-flat-button color="accent" style="margin-right: 5%;" (click)="dialogRef.close()">Cancelar</button>
+        <button  type="submit" mat-flat-button color="primary" style="margin-right: 5%;" (click)="eliminarEquipo()">Confirmar</button>
+
+</div>

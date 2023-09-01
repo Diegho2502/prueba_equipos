@@ -1,0 +1,60 @@
+<h1 style="margin: 2%;">Agregar Equipo</h1>
+
+
+<div style="margin: 5%;">
+    <form class="example-form" [formGroup]="agregarEquipo" (ngSubmit)="enviarFormulario()">
+
+        <div>
+            <h2>Informacion del Equipo:</h2>
+            <mat-form-field appearance="outline" style="margin-right: 5%; width: 300px;">
+                <mat-label>Nombre</mat-label>
+                <input  matInput class="filtrar-input" placeholder="Nombre Del Equipo" formControlName="nombre">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;" >
+                <mat-label>SitioWeb</mat-label>
+                <input  matInput class="filtrar-input" placeholder="SitioWeb Del Equipo" formControlName="sitioWeb">
+            </mat-form-field><br>
+
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;">
+                <mat-label>Nacionalidad</mat-label>
+                <input  matInput class="filtrar-input" placeholder="Nacionalidad Del Equipo" formControlName="nacionalidad"> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;">
+                <mat-label>Fecha de fundacion</mat-label>
+                <input  matInput class="filtrar-input" type="date" placeholder="Fecha De Fundacion Del Equipo" formControlName="fundacion">
+                
+            </mat-form-field><br>
+
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;">
+                <mat-label>Entrenador</mat-label>
+                <input  matInput class="filtrar-input" placeholder="Nombre Del Entrenador" formControlName="entrenador">
+            </mat-form-field>
+                
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;">
+                <mat-label>Valor</mat-label>
+                <input  matInput class="filtrar-input" type="number" placeholder="Valor  Del Equipo" formControlName="valor">
+            </mat-form-field>
+
+
+        </div>
+
+        <div>
+            <h2>Informacion del Estadio:</h2>
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;">
+                <mat-label>Estadio</mat-label>
+                <input  matInput class="filtrar-input" placeholder="Estadio Del Equipo" formControlName="estadio">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="margin-right: 5%;width: 300px;" >
+                <mat-label>Capacidad</mat-label>
+                <input  matInput class="filtrar-input" placeholder="Capacidad Maxima Del Estadio" type="number" formControlName="capacidad">
+            </mat-form-field><br>
+        </div>
+        <button  type="reset"  mat-flat-button color="accent" style="margin-right: 5%;" (click)="dialogRef.close()">Cancelar</button>
+        <button  type="submit" mat-flat-button color="primary" style="margin-right: 5%;">Agregar</button>
+      </form>
+</div>
+
+

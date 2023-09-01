@@ -1,0 +1,67 @@
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <h1><strong>Inicio de FIFA</strong></h1>
+    <h2>Lista de todos los equipos</h2>
+    <h3>Total de equipos mostrados: {{equiposMostrados}}  de {{totalEquipos}}</h3>
+    <!-- <h1>Filtar por fecha:</h1> -->
+
+
+  </div>
+  <div class="col-5">
+    <div class="example-button-container" >
+      <button mat-stroked-button color="primary" (click)="verMenosBtn()">-25</button>
+    </div>
+    <div class="example-button-container" >
+      <button mat-stroked-button color="primary" (click)="volverBtn()">Reiniciar</button>
+    </div>
+    <div class="example-button-container" >
+      <button mat-stroked-button color="primary" (click)="verMasBtn()">+25</button>
+    </div>
+  </div>
+  <div class="col-1"></div>
+  
+  
+
+</div><br><hr>
+    <!-- rangePicker-->
+<!--     <form appearance="outline" [formGroup]="rangofechas">
+      <mat-form-field appearance="outline" style="margin-right: 5%;width: 200px;">
+        <mat-label>Fecha de fundacion</mat-label>
+        <input  matInput class="filtrar-input" type="date" placeholder="Fecha De Fundacion Del Equipo" formControlName="inicial">
+        <mat-datepicker-toggle matIconSuffix ></mat-datepicker-toggle>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="margin-right: 5%;width: 200px;">
+      <mat-label>Fecha de fundacion</mat-label>
+      <input  matInput class="filtrar-input" type="date" placeholder="Fecha De Fundacion Del Equipo" formControlName="final">
+      <mat-datepicker-toggle matIconSuffix ></mat-datepicker-toggle>
+    </mat-form-field>
+  <button mat-stroked-button color="primary" (click)="filtarPorFecha()" style="margin: 10px;">
+    <mat-icon>search</mat-icon>
+  </button><br>
+    </form> -->
+
+<div>
+  
+</div>
+
+<br>
+
+<!--  -->
+<div class="row" >
+    <div class="col-sm-4" *ngFor="let item of dataEquipos">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">Nombre: {{item.nombre}} </h1>
+          <h1 class="card-title">Nacionalidad:{{item.nacionalidad}} </h1>
+          <p class="card-text">Estadio: {{item.estadio}}</p>
+          <p class="card-text">Entrenador: {{item.entrenador}}</p>
+
+ <!--          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div><br>
+    </div><br>
+  </div>
+
+  

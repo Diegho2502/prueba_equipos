@@ -1,0 +1,33 @@
+<section class="" >
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://fdprdeuwestaui.blob.core.windows.net/fifa/Images/Background.jpg"
+            class="img-fluid" width="1000px">
+        </div>
+        
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div style="text-align: center; font-size:small;">
+                <h1>Login</h1>
+            </div>
+            <form class="example-form" [formGroup]="loginForm" (ngSubmit)="compareCredentials()" >            
+              <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                <img src="./assets/fifa-256.png"  width="200px">
+                <img src="https://static.thenounproject.com/png/3197864-200.png"  width="200px">
+            </div><br>
+            <!-- Email input -->
+            <mat-form-field appearance="outline" style="margin-right: 5%; width: 100%;">
+              <mat-label>Usuario</mat-label>
+              <input  matInput class="filtrar-input" placeholder="Nombre Del Usuario" formControlName="username">
+          </mat-form-field>
+            <!-- Password input -->
+            <mat-form-field appearance="outline" style="margin-right: 5%; width: 100%;">
+              <mat-label>Contraseña</mat-label>
+              <input  matInput class="filtrar-input" type="password" placeholder="Contraseña del usuario" formControlName="password">
+          </mat-form-field>
+          <button type="submit" mat-stroked-button color="primary" style="margin-right: 5%; width: 100%;">Iniciar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
